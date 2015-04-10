@@ -1,4 +1,4 @@
-(function() {
+<?php if(extension_loaded("zlib")){ob_start("ob_gzhandler");} header("Content-type: text/javascript"); ?>(function() {
 	// Utils 
 	var pfx = (function() {
 		var style = document.createElement('dummy').style,
@@ -27,3 +27,4 @@
 
 
 })();
+console.log('App2');console.log('App3');console.log('App4');<?php if(extension_loaded("zlib")){ob_end_flush();}?>
